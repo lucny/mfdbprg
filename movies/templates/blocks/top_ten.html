@@ -1,0 +1,6 @@
+{% load mathfilters %}
+<ol>
+    {% for film in top_ten %}
+    <li><a href="{% url 'film_detail' film.pk %}">{{ film.title }}</a> ({{ film.rate|mul:'10'|floatformat }} %)</li>
+    {% endfor %}
+</ol>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>MFDB</title>
+</head>
+<body>
+    <h1>MFDB</h1>
+    {%  for film in films %}
+        <div class="card">
+            <h2>{{ film.title }}</h2>
+            <p><img src="{{ film.poster.url }}" alt="{{ film.title }}"></p>
+            <p>Rok: {{ film.release_date.year }}, Hodnocení: {{ film.rate }}</p>
+            <p>{{ film.plot }}</p>
+        </div>
+    {% endfor %}
+    <p>Počet filmů: {{ num_films }}</p>
+</body>
+</html>

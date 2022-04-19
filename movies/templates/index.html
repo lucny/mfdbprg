@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <h3 class="bg-danger text-center text-uppercase p-3 text-white">Nové filmy</h3>
+        {% include "blocks/new_films.html" %}
+    </div>
+    <div class="col-md-4">
+        <h3 class="bg-info text-center text-uppercase p-3 text-white">Top ten</h3>
+        {% include "blocks/top_ten.html" %}
+    </div>
+    <div class="col-md-4">
+        <h3 class="bg-success text-center text-uppercase p-3 text-white">Seznam žánrů</h3>
+        {% include "blocks/genre_list.html" %}
+    </div>
+</div>
+{% endblock %}
