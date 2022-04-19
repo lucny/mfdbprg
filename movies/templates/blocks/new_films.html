@@ -5,7 +5,7 @@
             <div class="col-md-2">
                 {% if film.poster %}
                 <a href="{% url 'film_detail' film.pk %}">
-                <img src="{{ film.poster.url }}" alt="{{ film.title }}"
+                <img src="{{ film.poster.url }}" alt="Plakát k filmu"
                      class="img-fluid">
                 </a>
                 {% endif %}
